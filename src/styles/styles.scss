@@ -1,19 +1,30 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
-/* Global Styles */
+html,
 body {
   font-family: $font-stack;
   margin: 0;
   padding: 0;
+  height: 100%; // Ensure the body takes up the full viewport height
   background-color: $background-color;
 }
 
-#root {
+* {
+  box-sizing: border-box;
+}
+
+.app-container {
   @include flex-center;
 
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 40px); // Adjusted min-height to account for padding
+  padding: 20px;
+}
+
+h1 {
+  color: $primary-color;
+  margin-bottom: 20px;
 }
 
 /* Navigation Styles */
@@ -23,7 +34,7 @@ nav {
   a {
     margin-right: 10px;
 
-    @include link-style();
+    @include link-style;
 
     &.active {
       font-weight: bold;

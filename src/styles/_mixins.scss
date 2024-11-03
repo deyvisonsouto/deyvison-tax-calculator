@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use 'variables' as *;
 
 @mixin link-style($color: $primary-color) {
@@ -13,4 +14,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin button-style($bg-color: $primary-color, $text-color: #fff) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+
+  &:hover {
+    background-color: color.adjust($bg-color, $lightness:10%);
+  }
+
+  &:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+  }
 }

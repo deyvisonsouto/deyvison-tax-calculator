@@ -2,7 +2,7 @@ import { TaxBracket } from '../models/TaxBracket';
 import httpClient from './httpClient';
 
 
-interface TaxBracketsResponse {
+export interface TaxBracketsResponse {
   tax_brackets: TaxBracket[];
 }
 

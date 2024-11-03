@@ -1,0 +1,32 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+
+  .form-group {
+    margin-bottom: 15px;
+
+    label {
+      margin-right: 10px;
+    }
+
+    input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  }
+
+  .error {
+    color: $error-color;
+    font-weight: bold;
+  }
+
+  button {
+    @include button-style;
+  }
+}

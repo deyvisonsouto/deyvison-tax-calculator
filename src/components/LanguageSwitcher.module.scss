@@ -1,0 +1,29 @@
+@use 'sass:color';
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+
+  button {
+    @include button-style;
+
+    margin-right: 10px;
+
+    &.active {
+      background-color: color.adjust($primary-color, $lightness:15%);
+      font-weight: bold;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .separator {
+    margin: 0 5px;
+    align-self: center;
+    color: $primary-color;
+  }
+}

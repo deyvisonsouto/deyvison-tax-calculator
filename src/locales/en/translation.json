@@ -1,0 +1,20 @@
+{
+  "welcome": "Welcome to the Tax Calculator Application.",
+  "taxCalculator": "Tax Calculator",
+  "calculate": "Calculate",
+  "annualIncome": "Annual Income",
+  "taxYear": "Tax Year",
+  "totalTaxesOwed": "Total Taxes Owed",
+  "effectiveTaxRate": "Effective Tax Rate",
+  "taxesPerBand": "Taxes Per Band",
+  "loading": "Loading...",
+  "error": "An error occurred.",
+  "unsupportedYear": "Unsupported tax year. Please select a year between 2019 and 2022.",
+  "networkError": "Network Error. Please check your internet connection.",
+  "pageNotFound": "Page Not Found",
+  "goToHome": "Go to Home Page",
+  "pleaseProvideIncome": "Please provide your annual income.",
+  "pleaseEnterValidIncome": "Please enter a valid income.",
+  "taxResults": "Tax Results",
+  "bandLabel": "Band {{bracket}} at {{rate}}%: ${{tax}}"
+}

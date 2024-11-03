@@ -1,0 +1,20 @@
+{
+  "welcome": "Bienvenue dans l'application Calculateur d'impôts.",
+  "taxCalculator": "Calculateur d'impôts",
+  "calculate": "Calculer",
+  "annualIncome": "Revenu annuel",
+  "taxYear": "Année fiscale",
+  "totalTaxesOwed": "Total des impôts dus",
+  "effectiveTaxRate": "Taux d'imposition effectif",
+  "taxesPerBand": "Impôts par tranche",
+  "loading": "Chargement...",
+  "error": "Une erreur est survenue.",
+  "unsupportedYear": "Année fiscale non prise en charge. Veuillez sélectionner une année entre 2019 et 2022.",
+  "networkError": "Erreur réseau. Veuillez vérifier votre connexion internet.",
+  "pageNotFound": "Page non trouvée",
+  "goToHome": "Aller à la page d'accueil",
+  "pleaseProvideIncome": "Veuillez fournir votre revenu annuel.",
+  "pleaseEnterValidIncome": "Veuillez entrer un revenu valide.",
+  "taxResults": "Résultats fiscaux",
+  "bandLabel": "Tranche {{bracket}} à {{rate}}% : ${{tax}}"
+}
