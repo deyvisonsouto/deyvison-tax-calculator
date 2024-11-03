@@ -1,0 +1,16 @@
+@use 'variables' as *;
+
+@mixin link-style($color: $primary-color) {
+  text-decoration: none;
+  color: $color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
