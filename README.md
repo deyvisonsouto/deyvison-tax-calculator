@@ -1,98 +1,125 @@
 # Deyvison Tax Calculator
 
-Welcome to the **Deyvison Tax Calculator**! This React-based application helps you calculate your taxes quickly and accurately.
+Welcome to the **Deyvison Tax Calculator**! This project is a React-based application that allows users to calculate taxes efficiently. It follows a clean architecture and is structured for scalability and maintainability.
 
 ## Table of Contents
 
 - [Deyvison Tax Calculator](#deyvison-tax-calculator)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
-  - [Demo](#demo)
   - [Installation](#installation)
-  - [Usage](#usage)
-  - [Available Scripts](#available-scripts)
-    - [`npm start`](#npm-start)
-    - [`npm test`](#npm-test)
-    - [`npm run build`](#npm-run-build)
-    - [`npm run eject`](#npm-run-eject)
+  - [Project Structure](#project-structure)
+  - [Architecture](#architecture)
+  - [Testing](#testing)
+    - [Running Tests](#running-tests)
+  - [Commands](#commands)
   - [Technologies Used](#technologies-used)
   - [Contact](#contact)
 
 ## Features
 
-- **User-Friendly Interface**: Intuitive design for easy navigation.
-- **Real-Time Calculations**: Instant tax computation as you input data.
-- **Responsive Design**: Optimized for both desktop and mobile devices.
-- **Customizable Parameters**: Adjust tax rates and deductions according to your needs.
-
-## Demo
-
-Check out the live demo [here](#) *(Provide link if available)*.
+- **Real-Time Calculations**: Instant tax calculation based on user inputs.
+- **Internationalization**: Supports multiple languages for broader accessibility.
+- **Responsive Design**: Optimized for various screen sizes.
+- **Test Coverage**: Thoroughly tested components and services for reliability.
 
 ## Installation
 
-1. **Clone the repository**
+1. **Clone the repository**:
 
    ```bash
    git clone https://github.com/yourusername/deyvison-tax-calculator.git
    ```
 
-2. **Navigate to the project directory**
+2. **Navigate to the project directory**:
 
    ```bash
    cd deyvison-tax-calculator
    ```
 
-3. **Install dependencies**
+3. **Install dependencies**:
 
    ```bash
    npm install
    ```
 
-## Usage
+## Project Structure
 
-Start the application in development mode:
-
-```bash
-npm start
+```plaintext
+DEYVISON-TAX-CALCULATOR
+├── src
+│   ├── components         # Reusable UI components
+│   │   ├── LanguageSwitcher     # Component for changing language
+│   │   ├── TaxForm              # Component for tax form inputs
+│   │   └── TaxResults           # Component for displaying results
+│   ├── locales            # Localization files (e.g., en, fr)
+│   ├── models             # Data models (e.g., TaxBracket, TaxCalculationResult)
+│   ├── pages              # Pages (e.g., TaxCalculatorPage, NotFoundPage)
+│   ├── services           # API calls and other services (e.g., httpClient, taxCalculatorApi)
+│   ├── styles             # SCSS styling files
+│   └── utils              # Utility functions and helpers
+│       └── taxCalculator.ts     # Main tax calculation logic
+├── tests                  # Configuration for tests
+├── public                 # Public assets (e.g., index.html, images)
+├── README.md              # Project documentation
+└── package.json           # Project metadata and dependencies
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser. The app will automatically reload if you make changes to the code.
+## Architecture
 
-## Available Scripts
+This project follows **Clean Architecture** principles and **SOLID** design patterns:
 
-In the project directory, you can run:
+- **Components** are organized to promote reusability and separation of concerns.
+- **Models** define the core data structures used across the application.
+- **Services** encapsulate API calls and business logic.
+- **Pages** represent distinct views or screens of the application.
 
-### `npm start`
+This architecture ensures scalability and makes it easier to test, maintain, and extend functionality over time.
 
-Runs the app in development mode.
+## Testing
 
-### `npm test`
+The project includes tests for components, pages, and services. We use **Jest** and **React Testing Library** for unit testing, which provides robust and flexible testing capabilities.
 
-Launches the test runner in interactive watch mode.
+### Running Tests
 
-### `npm run build`
+To execute tests, use:
 
-Builds the app for production to the `build` folder.
+```bash
+npm test
+```
 
-### `npm run eject`
+This command will launch the test runner in interactive watch mode. The following files represent different test areas:
 
-**Note**: This is a one-way operation. Once you `eject`, you can't go back.
+- **Component Tests**: `src/components/*.test.tsx`
+- **Page Tests**: `src/pages/*.test.tsx`
+- **Utility and API Tests**: `src/utils/*.test.ts`, `src/services/*.test.ts`
+
+## Commands
+
+In the project directory, you can run the following commands:
+
+- **Start Development Server**: `npm start`
+  - Runs the app in development mode at [http://localhost:3000](http://localhost:3000).
+
+- **Run Tests**: `npm test`
+  - Launches the test runner in interactive watch mode.
+
+- **Build for Production**: `npm run build`
+  - Builds the app for production, outputting files to the `build` directory.
+
+- **Eject**: `npm run eject`
+  - **Note**: This is a one-way operation. Once you eject, you cannot go back.
 
 ## Technologies Used
 
 - **React**: Front-end library for building user interfaces.
-- **JavaScript (ES6+)**: Programming language for web development.
-- **CSS3**: Styling and layout.
-- **HTML5**: Markup language for structuring content.
-- **Create React App**: Toolchain for efficient React development.
+- **TypeScript**: Static typing for improved code quality and readability.
+- **SCSS**: Enhanced styling with variables and mixins.
+- **Jest** & **React Testing Library**: Testing framework for reliable and maintainable tests.
 
 ## Contact
 
 - **Deyvison** - *Project Creator*
-- **Email**: [deyvisonsouto@gmail.com](mailto:ydeyvisonsouto@gmail.com)
+- **Email**: [deyvisonsouto@gmail.com](mailto:deyvisonsouto@gmail.com)
 - **GitHub**: [Deyvison](https://github.com/yourusername)
 
----
-
-*This README was generated to provide a comprehensive overview of the Deyvison Tax Calculator project.*
